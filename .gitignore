@@ -25,5 +25,8 @@ hs_err_pid*
 # IntelliJ
 *.iml
 
+#mvn
+/target/*
+
 # myconfig
 *.erik
