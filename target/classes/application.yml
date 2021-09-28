@@ -1,0 +1,24 @@
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          okta:
+            issuer-uri: https://erikmanor.okta.com/oauth2/aus1d9em7Auo2oFBY5d6
+          oktamfa:
+            issuer-uri: https://erikmanor.okta.com/oauth2/aus1d9em7Auo2oFBY5d6
+            audience: http://promos-red.oktaice.com:8080 # not an actual Spring property
+        registration:
+          okta:
+            client-id: 0oa1zjot12y9w9cKe5d6
+            client-secret: ec9Ki3T66LCmtHJd25ydBdVCBYxwxP_ELyLSzJTU
+            scope: openid,profile,email,groups
+          oktamfa:
+            client-id: 0oa1vq8t6p7kcd4KX5d7
+            client-secret: qFA02RQwgHx8xuYC0C8LJZpQng4_5WszFOovM9WB
+            scope: openid,admin,profile,email,groups
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

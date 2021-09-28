@@ -1,0 +1,24 @@
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          okta:
+            issuer-uri: https://{OKTA_ORG}/oauth2/{AUTHORIZATION_SERVER}
+          oktamfa:
+            issuer-uri: https://{OKTA_ORG}/oauth2/{AUTHORIZATION_SERVER}
+            audience: {AUDIENCE}  # not an actual Spring property
+        registration:
+          okta:
+            client-id: {CLIENT_ID}
+            client-secret: {CLIENT_SECRET}
+            scope: openid,profile,email,groups
+          oktamfa:
+            client-id: {CLIENT_ID}
+            client-secret: {CLIENT_SECRET}
+            scope: openid,admin,profile,email,groups
+#logging:
+#  level:
+#    org:
+#      springframework:
+#        security: DEBUG
