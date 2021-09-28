@@ -70,7 +70,7 @@ For the properties under `oktamfa` use the values from the second app (app2) cre
 * Select a couple of test users and add both to **app1**
 * Select one of the users and add them to the `admin` group and to **app2**
 
-Then, run the project with `./mvnw`. You should be able to navigate to `http://localhost:8080` to see the application.
+Then, run the project with `./mvnw spring-boot:run`. You should be able to navigate to `http://localhost:8080` to see the application.
 
 * Logging in with the user not part of the admin group should only present a `profile` button.
 * Logging in with the user that is part of the admin group will also present two admin buttons ([Admin](#admin) and [Admin2](#admin2)). Selecting either will prompt for MFA the first time.
